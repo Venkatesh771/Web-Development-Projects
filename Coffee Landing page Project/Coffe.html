@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Coffe Page</title>
+    <link rel="stylesheet" href="Coffe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Navigation -->
+    <!-- <nav>
+        <h1 class="Logo"><i class="fa-solid fa-mug-hot"></i> Coffee-Day</h1>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Menu</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav> -->
+    <header class="Nav">
+        <div class="logo"><i class='bx bxs-coffee'></i> Coffe Day</div>
+        <div class="menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="nav-bar">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <script>
+        menu = document.querySelector(".menu");
+        menu.onclick = function() {
+            var navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+
+    <div class="Header">
+        <h1 class="main-heading">START YOUR DAY</h1>
+        <h1 class="primary-heading">With Our COFFE</h1>
+        <button class="main-btn">Shop Now</button>
+    </div>
+
+    <section id="our-story">
+        <div class="image-container">
+            <div class="img"></div>
+        </div>
+
+        <div class="section-content">
+            <div class="title-style">
+                <span class="line"></span>
+                <h1 class="title">Our Story</h1>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam iure ratione asperiores unde ut. Aliquid, illo deserunt officia laudantium ab nisi provident tempore sequi suscipit alias voluptas, voluptatibus fuga quasi.</p>
+            <button id="bt2">Learn More</button>
+        </div>
+    </section>
+
+    <section class="coffe-container">
+        <div class="content-section">
+            <div class="title-style">
+                <h1 class="title-two">
+                    Perfect Place <br>
+                    To Enjoy Your <br>
+                    Coffee
+                </h1>
+            </div>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto unde ad dolor corporis iusto mollitia rerum quisquam itaque eligendi sequi autem sapiente eos similique explicabo, est quae et. Nesciunt, similique!</p>
+            <button id="bt2">Learn More</button>
+        </div>
+
+        <section class="img-container">
+            <img src="Images/2.png" class="img-2">
+        </section>
+    </section>
+
+    <!-- Products -->
+    <section class="products">
+        <h1 class="title-three">Our Products</h1>
+        <!-- card-1 -->
+        <section class="cards">
+        <div class="card">
+            <div class="card-img img-one"></div>
+            <div class="card-title">
+                <h1>Mocha</h1>
+            </div>
+
+            <div class="items">
+                <p>Espresso</p>
+                <p>Stremed Milk</p>
+                <p>Choclate</p>
+            </div>
+            <button class="bt1">Learn More</button>
+        </div>
+
+        <!-- card-2 -->
+        <div class="card">
+            <div class="card-img img-Two"></div>
+            <div class="card-title">
+                <h1>Mocha</h1>
+            </div>
+
+            <div class="items">
+                <p>Espresso</p>
+                <p>Stremed Milk</p>
+                <p>Choclate</p>
+            </div>
+            <button class="bt1">Learn More</button>
+        </div>
+        
+        <!-- card-3 -->
+        <div class="card">
+            <div class="card-img img-Three"></div>
+            <div class="card-title">
+                <h1>Mocha</h1>
+            </div>
+
+            <div class="items">
+                <p>Espresso</p>
+                <p>Stremed Milk</p>
+                <p>Choclate</p>
+            </div>
+            <button class="bt1">Learn More</button>
+        </div>
+    </section>
+    </section>
+
+    <!-- footer -->
+    <hr>
+
+    <footer id="v2">
+        <div class="container1">
+            <h1 class="head-info">About <span class="sp">Us</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur</p>
+        </div>
+
+        <div class="container1">
+            <h1 class="head-info">Contact <span class="sp">Us</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur</p>
+        </div>
+
+        <div class="container1">
+            <h1 class="head-info">opening <span class="sp">Hours</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur</p>
+        </div>
+
+        <hr class="hr-two">
+        
+        <h3 class="para">
+            CopyRight@ 2024 Venkat WebDev
+        </h3>
+    </footer>
+</body>
+</html>

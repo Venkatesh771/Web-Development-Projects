@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+:root{
+    --main-color:#ff1e1ef0;
+    --primary-color:#fffa72;
+}
+
+button{
+    padding:10px 30px;
+    background: var(--main-color);
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 20px;
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0b0b0b;
+}
+
+/* .Logo{
+    font-family:cursive;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    font-family: sans-serif;
+    padding-top: 15px;
+    background-color: rgb(255, 0, 0);
+}
+.fa-solid{
+    font-size: 30px;
+    padding-bottom:10px;
+}  */
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 55px;
+    background-color: rgb(248, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+.logo i{
+    color: #f8f8f8;
+    font-size: 25px;
+}
+.logo{
+    font-size: 25px;
+    font-weight: bold;
+    color: aliceblue;
+}
+.menu{
+    display: none;
+}
+.nav-bar ul{
+    display: flex;
+}
+.nav-bar ul li a{
+    display: block;
+    color: rgb(244, 244, 244);
+    font-size: 15px;
+    padding: 5px 15px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+.nav-bar ul li a:hover{
+    color: black;
+    background: white;
+}
+.nav-bar ul li a.active{
+    color: black;
+    background: white;
+}
+
+li{
+    display: inline;
+    list-style: none;
+}
+
+li a{
+    color:#fff;
+    text-decoration: none;
+    margin: 20px;
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+li a:hover{
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    transition-duration: 2s;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+/* Navigation End Here..*/
+
+/* header Start Area */
+.Header{
+    background: url(Images/pexels-nao-triponez-129207.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    font-family:'Playfair Display',serif;
+    font-weight: normal;
+
+    /* flex Box */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #fff;
+}
+
+.main-heading{
+    position:absolute;
+    top: 7rem;
+    font-size: 3rem;
+    word-spacing: 10px;
+}
+
+.primary-heading{
+    position: absolute;
+    bottom: 4rem;
+    font-size: 2.5rem;
+    word-spacing: 10px;
+    margin-bottom: -20px;
+}
+
+.main-btn{
+    position: absolute;
+    bottom: 2rem;
+    padding: 10px 30px;
+    margin-top: 10px;
+    background: transparent;
+    background: var(--main-color);
+    transform: translateY(50px);
+}
+
+#our-story{
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+.img{
+    height: 400px;
+    width: 400px;
+    background: url(Images/pexels-chitokan-2183027-removebg-preview.png);
+    background-position: center;
+    background-size: cover;
+}
+.title-style{
+    display: flex;
+    align-items: center;
+}
+
+.title{
+    font-family:'Playfair Display',serif;
+    font-size: 4rem;
+    color: #fff;
+    transform: translateX(-5px);
+}
+
+line{
+    width: 100px;
+    height: 2px;
+    transform: translateX(-120px);
+    background: #fff;
+}
+
+.section-content p{
+    max-width: 500px;
+    color: #fff;
+    font-family: sans-serif;
+    line-height: 20px;
+    margin: 20px 0;
+}
+/* Story-Ends */
+
+.coffe-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.img-2{
+    height: 400px;
+    width: 400px;
+}
+
+.content-section p{
+    max-width: 500px;
+}
+
+.title-two{
+    font-size: 3rem;
+    color: #fff;
+    font-family: 'Playfair Display',serif;
+}
+
+.content-section p{
+    max-width: 500px;
+    margin-top: 20px;
+    font-family: sans-serif;
+    color: #fff;
+    margin-bottom: 20px;
+}
+/* Coffee End */
+
+/* Products */
+
+.products{
+    margin:5rem;
+}
+.title-three{
+    text-align: center;
+    font-size: 3.5rem;
+    margin-top: 7rem;
+    margin-bottom: 6rem;
+    color: #fff;
+    border-left: 10px solid black;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card{
+    border: 2px solid var(--main-color);
+    padding: 0 20px;
+    height: 400px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+.card-img{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: -60px;
+    /* border: 2px solid var(--main-color); */
+}
+
+.img-one{
+    background: url(Images/1.png);
+    background-position: center;
+    background-size: cover;
+    /* border-radius: 50px; */
+}
+
+.img-Two{
+    background: url(Images/2.png);
+    background-position: center;
+    background-size: cover;
+    /* border-radius: 50px; */
+}
+
+.img-Three{
+    background: url(Images/3.png);
+    background-position: center;
+    background-size: cover;
+    /* border-radius: 50px; */
+}
+
+.card-title{
+    color: #fff;
+    font-family: sans-serif;
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+.items p{
+    color: #fff;
+    margin: 10px 0;
+    font-family: sans-serif;
+}
+
+.bt1{
+    margin-bottom: 70px;
+}
+
+#v2{
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.container1{
+    margin: 20px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.head-info{
+    margin-bottom: 20px;
+}
+
+.container1 p{
+    line-height: 20px;
+}
+
+.sp{
+    color: var(--main-color);
+}
+/* END */
+
+@media only screen and (max-width:700px){
+    .main-heading{
+        font-size: 2rem;
+        position:relative;
+        top: -7rem;
+        word-spacing: 5px;
+    }
+    nav{
+        padding-top: 10px;
+        font-size: small;
+    }
+
+    .primary-heading{
+        position: absolute;
+        bottom: 7rem;
+        font-size: 2rem;
+        word-spacing: 5px;
+        margin-bottom: -20px;
+    }
+
+    .main-btn{
+        position: absolute;
+        bottom: 2rem;
+        padding: 10px 30px;
+        margin-top: 10px;
+        background: transparent;
+        background: var(--main-color);
+        transform: translateY(10px);
+    }
+
+    #our-story{
+    font-size: 15px;
+    transform: translateX(10px);
+    }
+    .title{
+        font-size: 3rem;
+        transform: translateX(125px);
+    }
+
+    #bt2{
+        transform: translateX(160px);
+    }
+    .title-two{
+        font-size: 2.5rem;
+        transform: translateX(125px);
+    }
+
+    .img-2{
+        height: 300px;
+        width: 300px;
+        margin-top: 100px;
+    }
+
+    .title-three{
+        font-size: 3rem;
+        margin-top: 5rem;
+        margin-bottom: 7rem;
+        color: #fff;
+        border-left: 10px solid black;
+    }
+
+    .card{
+        border: 2px solid var(--main-color);
+        padding: 0 20px;
+        height: 300px;
+        width: 150px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+        position: relative;
+        margin-bottom: 4rem;
+    }
+    .bt1{
+        margin-bottom: 40px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    header{
+        padding: 0 50px;
+    }
+}
+@media only screen and (max-width: 700px){
+    header{
+        padding: 0 40px;
+    }
+}
+@media only screen and (max-width: 650px){
+    /* header{
+        padding: 0 30px;
+    } */
+    .logo{
+        font-size: 17px;
+    }
+    .nav-bar ul li a{
+        font-size: 13px;
+        padding: 5px 15px;
+    }
+}
+@media only screen and (max-width: 650px){
+    /* header{
+        padding: 0 30px;
+        height: 50px;
+    } */
+    .Nav{
+        height: 50px;
+    }
+    .logo{
+        font-size: 40px;
+    }
+    .nav-bar ul li a{
+        font-size: 13px;
+        padding: 5px 10px;
+    }
+}
+
