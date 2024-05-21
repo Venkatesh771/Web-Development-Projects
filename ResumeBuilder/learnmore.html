@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn More</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" href="cv.png" type="image/x-icon">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kalam:wght@300;400;700&family=Kolker+Brush&display=swap');
+
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      padding: 20px 20px 20px;
+      margin-top: 20px;
+      width: 700px;
+      font-family: "Nunito", sans-serif;
+      font-weight: 800;
+    }
+
+    .faq {
+      margin-bottom: 20px;
+    }
+
+    .question {
+      padding: 5px 10px;
+      background-color: #e1e1e1b9;
+      cursor: pointer;
+      font-size: 18px;
+      color: #333;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .answer {
+      display: none;
+      margin-top: 10px;
+      padding-top: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 3px;
+      background-color: #c6c6c69b;
+
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .answer.show {
+      display: block;
+      animation: slideIn 0.3s ease-out;
+    }
+
+    .btn-primary {
+      margin-left: 5px;
+      padding: 3px 7px;
+      border: none;
+      background-color: transparent;
+      color: rgb(0, 0, 0);
+    }
+
+    .btn-primary:hover {
+      background-color: rgba(0, 0, 0, 0.787);
+    }
+
+    .addbtn {
+      font-size: 17px;
+    }
+
+    /* section1 */
+    .section1 {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .image-container {
+      position: relative;
+      width: 50%;
+    }
+
+    .blur {
+      max-width: 50%;
+      height: auto;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+
+    .text {
+      font-family: 'Raleway', sans-serif;
+      border-radius: 5px;
+      padding: 4px 7px;
+      background-color: #0000008f;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 17px;
+      font-weight: 500;
+      color: rgb(255, 255, 255);
+      z-index: 2;
+      border: none;
+      border: 1px solid white;
+    }
+
+    .text2 {
+      font-family: 'Raleway', sans-serif;
+      border-radius: 5px;
+      padding: 4px 7px;
+      background-color: #0000008f;
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 17px;
+      font-weight: 500;
+      color: rgb(255, 255, 255);
+      z-index: 2;
+      border: none;
+      border: 1px solid rgb(255, 255, 255);
+    }
+
+    .text:hover,
+    .text2:hover {
+      color: #fff;
+      background-color: rgba(90, 90, 90, 0.376);
+      border: 1px solid white;
+    }
+
+    .section1 img {
+      margin-right: 20px;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .section1 .contentA {
+      font-family: 'Raleway', sans-serif;
+      max-width: 45%;
+      margin-left: 30px;
+      font-weight: 600;
+    }
+
+    .section1 .contentA h2 {
+      font-size: 26px;
+      font-weight: 600;
+    }
+
+    /* section2 */
+    .title {
+      background-color: #000000;
+      color: #fff;
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      border-left: 5px solid white;
+      border-right: 5px solid white;
+      box-shadow: rgba(149, 157, 165, 0.697) 0px 8px 24px;
+    }
+
+    .title h3 {
+      font-family: 'Raleway', sans-serif;
+      font-size: 20px;
+      padding: 10px 4px;
+      font-weight: 600;
+    }
+
+    .content {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .right {
+      margin-right: 5%;
+    }
+
+    .left {
+      margin-left: 5%;
+      max-width: 30%;
+      flex: 1;
+      padding: 0 20px;
+      background-color: rgba(139, 138, 138, 0.44);
+    }
+
+    .left h3 {
+      margin: 20px auto;
+      width: 80%;
+      font-size: 22px;
+      padding: 8px 5px;
+      background-color: #000000;
+      text-align: center;
+      color: #fff;
+      border-left: 4px solid rgb(255, 215, 0);
+      border-right: 4px solid rgb(255, 215, 0);
+      box-shadow: rgba(149, 157, 165, 0.697) 0px 8px 24px;
+    }
+
+    table {
+      width: 80%;
+      border-collapse: separate;
+      border-spacing: 0 10px;
+      margin: 0 auto;
+      background-color: white;
+      cursor: pointer;
+      margin-bottom: 30px;
+      box-shadow: rgba(149, 157, 165, 0.697) 0px 8px 24px;
+    }
+
+    th,
+    td {
+      font-size: 17px;
+      padding: 8px 10px;
+      text-align: center;
+      border: none;
+
+    }
+
+    .right {
+      flex: 1;
+      padding: 0 20px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    td span {
+      display: inline-block;
+      transition: background-color 0.3s ease;
+      background-color: transparent;
+    }
+
+    td:hover {
+      background-color: black;
+      color: #fff;
+      border-left: 4px solid rgb(255, 215, 0);
+      border-right: 4px solid rgb(255, 215, 0);
+    }
+
+    /* section2 */
+
+    /* Navigation */
+    .navbar {
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 60px;
+      width: 100vw;
+    }
+
+    .navbar img.logo {
+      max-height: 100%;
+      max-width: 100%;
+    }
+
+    /* FAQ */
+    .faqtitle {
+      background-color: #000000;
+      color: #fff;
+      text-align: center;
+      margin-top: 40px;
+      border-left: 5px solid white;
+      border-right: 5px solid white;
+      box-shadow: rgba(149, 157, 165, 0.697) 0px 8px 24px;
+    }
+
+    .faqtitle h3 {
+      font-family: 'Raleway', sans-serif;
+      font-size: 20px;
+      padding: 10px 4px;
+      font-weight: 600;
+    }
+
+    /* section4 */
+    .section4 {
+      margin-top: 20%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(74, 74, 74, 0.751);
+    }
+
+    .lastimg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 0;
+    }
+
+    .lastimg img {
+      max-width: 100%;
+    }
+
+    .matter {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      z-index: 1;
+    }
+
+    .matter .rbtn {
+      margin-top: 60%;
+      font-family: 'Raleway', sans-serif;
+      border-radius: 5px;
+      padding: 3px 10px;
+      background-color: #000000aa;
+      font-size: 17px;
+      font-weight: 500;
+      color: rgb(253, 253, 253);
+      border: none;
+      margin-right: 5px;
+      border: 1.5px solid rgb(0, 0, 0);
+    }
+
+    .matter .rbtn:hover {
+      background-color: #0303034e;
+      border: 1.5px solid rgb(0, 0, 0);
+      color: #ffffff;
+    }
+
+    /* footer */
+    .footer {
+      margin-top: 205px;
+      border-top: 0.5px solid #fff;
+      width: 100vw;
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .footer-content {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .footer-content p {
+      color: #fff;
+      text-align: center;
+      font-family: 'Raleway', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .footer-content img {
+      height: 50px;
+      width: 130px;
+      margin-top: 5px;
+    }
+
+    .website-name {
+      color: #fff;
+      font-family: 'Raleway', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    #auth {
+      font-family: "Dancing Script", cursive;
+      margin-top: 8px;
+      font-size: 17px;
+    }
+
+    /* Responsive */
+    /* Mobile styles */
+    @media only screen and (max-width: 600px) {
+      .navbar {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+      }
+
+      .navbar img.logo {
+        max-height: 35px;
+        margin-bottom: 10px;
+      }
+
+      .navbar a {
+        margin: 5px 0;
+      }
+
+      .container {
+        width: 90%;
+        margin: 10px auto;
+        padding: 10px;
+      }
+
+      .text2 {
+        top: 68%;
+        left: 50%;
+      }
+
+      .section1 {
+        flex-direction: column;
+        padding: 10px;
+      }
+
+
+      .image-container {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .blur {
+        max-width: 100%;
+      }
+
+      .section1 .contentA {
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+      }
+
+      .left,
+      .right {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+      }
+
+      .content {
+        flex-direction: column;
+      }
+
+      .left,
+      .right {
+        width: 100%;
+      }
+
+      table {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .section4 {
+        margin-top: 10%;
+      }
+
+      .lastimg {
+        width: 100%;
+        text-align: center;
+      }
+
+      .matter .rbtn {
+        margin-top: 10px;
+      }
+
+      .footer {
+        margin-top: 150px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <div class="hcontent">
+    <div class="navbar">
+      <!-- Logo -->
+      <img class="logo" src="https://i.ibb.co/7jX7Fj5/logo-no-background.png" alt="Logo">
+    </div>
+  </div>
+  <!-- section1 -->
+  <div class="section1">
+    <div class="image-container">
+      <img
+        src="https://i0.wp.com/smashresume.com/wp-content/uploads/edd/2021/02/Free-Modern-Black-Resume-Template.jpg?resize=150150&ssl=1"
+        alt="Image" class="blur">
+      <div class="overlay"></div>
+      <button class="text" id="resumeBuilderBtn">Resume Builder</button>
+      <button class="text2" id="resumeCreatorBtn">Resume Editor</button>
+    </div>
+    <div class="contentA">
+      <h2>Resume Creation</h2>
+      <p>Get hired 33% faster with our feature-packed and easy-to-use resume builder.</p>
+      <p>Easly customize by adding or removing sections</p>
+      <p>By eliminating the need to start from scratch and format a resume manually, resume builders save users
+        significant time and effort.</p>
+      <p>Simply input their information and generate a polished resume within minutes.</p>
+    </div>
+  </div>
+
+  <!-- Section2 -->
+  <div class="section3">
+    <div class="title">
+      <h3>Get inspired by expertly crafted resume examples</h3>
+    </div>
+    <div class="content">
+      <div class="left">
+        <h3>Resume Examples</h3>
+        <table id="resumeTable">
+          <tr>
+            <td><span onclick="displayImage('basic')">Basic</span></td>
+          </tr>
+          <tr>
+            <td><span onclick="displayImage('engineering')">Engineering</span></td>
+          </tr>
+          <tr>
+            <td><span onclick="displayImage('highschool')">High School</span></td>
+          </tr>
+          <tr>
+            <td><span onclick="displayImage('teacher')">Teacher</span></td>
+          </tr>
+          <tr>
+            <td><span onclick="displayImage('medicalassistant')">Medical Assistant</span></td>
+          </tr>
+          <tr>
+            <td><span onclick="displayImage('customerservice')">Customer Service</span></td>
+          </tr>
+          <tr>
+            <td><span onclick="displayImage('internship')">Internship</span></td>
+          </tr>
+          <tr>
+            <td><span onclick="displayImage('informationtechnology')">Information Technology</span></td>
+          </tr>
+          <tr>
+            <td><span onclick="displayImage('healthcare')">Healthcare</span></td>
+          </tr>
+          <tr>
+            <td><span onclick="displayImage('executive')">Executive</span></td>
+          </tr>
+          <tr>
+            <td><span onclick="displayImage('coaching')">Coaching</span></td>
+          </tr>
+          <tr>
+            <td><span onclick="displayImage('sales')">Sales</span></td>
+          </tr>
+          <tr>
+            <td><span onclick="displayImage('projectmanager')">Project Manager</span></td>
+          </tr>
+          <tr>
+            <td><span onclick="displayImage('softwaredeveloper')">Software Developer</span></td>
+          </tr>
+          <tr>
+            <td><span onclick="displayImage('marketing')">Marketing</span></td>
+          </tr>
+          <tr>
+            <td><span onclick="displayImage('salesassociate')">Sales Associate</span></td>
+          </tr>
+        </table>
+
+      </div>
+      <div class="right" id="imageContainer">
+        <!-- Image will be displayed here -->
+      </div>
+    </div>
+  </div>
+  <!-- section2 -->
+
+  <!-- questions -->
+  <div class="faqtitle">
+    <h3>Frequently Asked Questions</h3>
+  </div>
+  <div class="container">
+    <div class="faq">
+      <h2 class="question">What is Resume Builder? <button class="btn btn-sm btn-primary toggle-answer"><span
+            class="addbtn">+</span></button></h2>
+      <div class="answer">
+        <p>Resume Builder is a tool that helps you create professional resumes easily.</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <h2 class="question">How do I use Resume Builder? <button class="btn btn-sm btn-primary toggle-answer"><span
+            class="addbtn">+</span></button></h2>
+      <div class="answer">
+        <p>To use Resume Builder, simply fill in your personal information, education, work experience, skills, etc.,
+          and the tool will generate a formatted resume for you.</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <h2 class="question">Is Resume Builder free to use? <button class="btn btn-sm btn-primary toggle-answer"><span
+            class="addbtn">+</span></button></h2>
+      <div class="answer">
+        <p>Yes, Resume Builder is completely free to use.</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <h2 class="question">Can I download my resume? <button class="btn btn-sm btn-primary toggle-answer"><span
+            class="addbtn">+</span></button></h2>
+      <div class="answer">
+        <p>Yes, after creating your resume, you can download it in various formats such as PDF or Word document.</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <h2 class="question">Can I edit my resume after generating it? <button
+          class="btn btn-sm btn-primary toggle-answer"><span class="addbtn">+</span></button></h2>
+      <div class="answer">
+        <p>Yes, you can edit your resume even after generating it. Resume Builder allows you to make changes and updates
+          as needed.</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <h2 class="question">Is my data safe with Resume Builder? <button
+          class="btn btn-sm btn-primary toggle-answer"><span class="addbtn">+</span></button></h2>
+      <div class="answer">
+        <p>Yes, we take data security seriously. Your personal information is encrypted and stored securely.</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <h2 class="question">How can I contact support? <button class="btn btn-sm btn-primary toggle-answer"><span
+            class="addbtn">+</span></button></h2>
+      <div class="answer">
+        <p>You can contact our support team via email at support@resumebuilder.com or through our contact form on the
+          website.</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <h2 class="question">Can I change the template of my resume? <button
+          class="btn btn-sm btn-primary toggle-answer"><span class="addbtn">+</span></button></h2>
+      <div class="answer">
+        <p>Yes, Resume Builder offers a variety of templates to choose from. You can easily switch between templates
+          before downloading your resume.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- section4 -->
+  <div class="section4">
+    <div class="lastimg">
+      <img src="https://masterbundles.com/wp-content/uploads/2023/03/don-thumb--229.jpg" alt="resume templete">
+    </div>
+    <div class="matter">
+      <button type="button" class="rbtn" id="buildBtn">Ready To Build</button>
+      <button type="button" class="rbtn" id="editBtn">Ready To Edit</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2024 All rights reserved <span class="website-name">ResumeBuilder io</span></p>
+      <img class="logo" src="https://i.ibb.co/P5BYCkg/logo-white2.png" alt="Logo">
+      <p id="auth">Venkateswar Reddy K</p>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    // JavaScript FAQ
+    $(document).ready(function () {
+      $('.toggle-answer').click(function () {
+        // Close all other answers
+        $('.answer.show').not($(this).closest('.faq').find('.answer')).removeClass('show');
+        // Toggle current answer
+        $(this).closest('.faq').find('.answer').toggleClass('show');
+        // Toggle button text
+        $(this).text($(this).text() == '+' ? '-' : '+');
+      });
+    });
+    // section2 script
+    function displayImage(category) {
+      var imageContainer = document.getElementById('imageContainer');
+      var imageSrc;
+      switch (category) {
+        case 'basic':
+          imageSrc = 'https://marketplace.canva.com/EAFToMa2lws/2/0/1131w/canva-black-and-white-simple-office-assistant-resume-vZCQthxgjPk.jpg';
+          break;
+        case 'engineering':
+          imageSrc = 'https://d25zcttzf44i59.cloudfront.net/engineering-resume-example.png';
+          break;
+        case 'highschool':
+          imageSrc = 'https://d25zcttzf44i59.cloudfront.net/high-school-student-resume-example.png';
+          break;
+        case 'teacher':
+          imageSrc = 'https://marketplace.canva.com/EAFQ-UDdAyc/1/0/1131w/canva-grey-and-white-neutral-modern-professional-teacher-resume-SqP9I2JeaD4.jpg';
+          break;
+        case 'medicalassistant':
+          imageSrc = 'https://d25zcttzf44i59.cloudfront.net/medical-assistant-resume-example.png';
+          break;
+        case 'customerservice':
+          imageSrc = 'https://d25zcttzf44i59.cloudfront.net/customer-service-resume-example.png';
+          break;
+        case 'internship':
+          imageSrc = 'https://d25zcttzf44i59.cloudfront.net/internship-resume-example.png';
+          break;
+        case 'informationtechnology':
+          imageSrc = 'https://d25zcttzf44i59.cloudfront.net/professional-it-resume-example.png';
+          break;
+        case 'healthcare':
+          imageSrc = 'https://images.cakeresume.com/images/fdbec2dd-bf9a-4766-ae59-d90989d17354.png';
+          break;
+        case 'executive':
+          imageSrc = 'https://d25zcttzf44i59.cloudfront.net/executive-resume-example.png';
+          break;
+        case 'coaching':
+          imageSrc = 'https://d25zcttzf44i59.cloudfront.net/basketball-coach-resume-example.png';
+          break;
+        case 'sales':
+          imageSrc = 'https://d25zcttzf44i59.cloudfront.net/sales-resume-example.png';
+          break;
+        case 'projectmanager':
+          imageSrc = 'https://d25zcttzf44i59.cloudfront.net/technical-project-manager-resume-example.png';
+          break;
+        case 'softwaredeveloper':
+          imageSrc = 'https://d25zcttzf44i59.cloudfront.net/software-engineer-resume-example.png';
+          break;
+        case 'marketing':
+          imageSrc = 'https://d25zcttzf44i59.cloudfront.net/marketing-coordinator-resume-example.png';
+          break;
+        case 'salesassociate':
+          imageSrc = 'https://d25zcttzf44i59.cloudfront.net/retail-sales-associate-resume-example.png';
+          break;
+        default:
+          return;
+      }
+      var img = document.createElement('img');
+      img.src = imageSrc;
+      img.alt = category + ' resume example';
+      imageContainer.innerHTML = '';
+      imageContainer.appendChild(img);
+    }
+    displayImage('healthcare');
+
+    var resumeBuilderBtn = document.getElementById("resumeBuilderBtn");
+    var resumeCreatorBtn = document.getElementById("resumeCreatorBtn");
+
+    resumeBuilderBtn.addEventListener("click", function () {
+      window.location.href = "ResumeBuilder.html";
+    });
+
+    resumeCreatorBtn.addEventListener("click", function () {
+      window.location.href = "ResumeEditor.html";
+    });
+
+    var buildBtn = document.getElementById("buildBtn");
+    var editBtn = document.getElementById("editBtn");
+
+    buildBtn.addEventListener("click", function () {
+      window.location.href = "ResumeBuilder.html";
+    });
+
+    editBtn.addEventListener("click", function () {
+      window.location.href = "ResumeEditor.html";
+    });
+  </script>
+
+</body>
+
+</html>

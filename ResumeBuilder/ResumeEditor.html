@@ -1,0 +1,1187 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Resume/CV Builder</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="icon" href="cv.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kalam:wght@300;400;700&family=Kolker+Brush&display=swap');
+
+        * {
+            margin: 0%;
+            padding: 0%;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        body {
+            /* background:linear-gradient(135deg, #e3e3e3be 0%,#9a9a9ad7 100%); */
+            background-color: #fff;
+            display: grid;
+            place-items: center;
+            font-weight: 450;
+            opacity: 1;
+        }
+
+        .none {
+            display: none;
+        }
+
+        .resume {
+            margin-top: 30px;
+            width: 800px;
+            box-shadow: rgba(149, 157, 165, 0.697) 0px 8px 24px;
+            margin-bottom: 30px;
+        }
+
+        #print {
+            background-color: #fff;
+            padding: 30px 50px;
+            height: 1090px;
+            width: 800px;
+        }
+
+        .head {
+            display: grid;
+            grid-template-columns: 3fr 1.5fr;
+            background-color: #ffffff48;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-bottom: 3px;
+        }
+
+        .head .main .name {
+            font-size: 55px;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .head .main span:nth-child(2) {
+            color: rgb(100, 100, 100);
+            font-size: 55px;
+            font-family: 'Raleway', sans-serif;
+            margin-left: 5px;
+        }
+
+        .head .main .post {
+            font-family: 'Barlow', sans-serif;
+        }
+
+        .head .contacts {
+            text-align: right;
+            padding-top: 7px;
+        }
+
+        .head .contacts .content {
+            font-weight: 500;
+            padding-right: 5px;
+        }
+
+        .head .contacts .symbol {
+            margin-right: 5px;
+            font-size: 15px;
+            width: 17px;
+            height: 17px;
+        }
+
+        .contacts .content,
+        .contacts .symbol {
+            display: inline-block;
+            /* vertical-align: middle; */
+        }
+
+        .line {
+            height: 0.5px;
+            background-color: rgb(0, 0, 0);
+            color: #000;
+            margin: 20px 0;
+            margin-bottom: 35px;
+        }
+
+        .mainbody {
+            display: grid;
+            grid-template-columns: 10fr 1fr 17fr;
+            height: 900px;
+        }
+
+        .mainbody .border {
+            background-color: rgb(0, 0, 0);
+            width: 0.5px;
+            opacity: 2;
+        }
+
+        .mainbody .rightside {
+            padding-left: 15px;
+        }
+
+        .title {
+            font-weight: 700;
+            font-size: 18px;
+            border: none;
+            padding-bottom: 3px;
+            border-bottom: 2px rgb(0, 0, 0) solid;
+        }
+
+        .skill {
+            margin-bottom: 6px;
+        }
+
+        button {
+            margin: 15px 0;
+        }
+
+        .language {
+            margin-bottom: 6px;
+        }
+
+        .language span:nth-child(odd) {
+            font-weight: 700;
+        }
+
+        .edublock,
+        .expblock {
+            margin-bottom: 10px;
+        }
+
+        .edublock .head,
+        .exp-head {
+            font-weight: 700;
+            font-size: 17px;
+        }
+
+        /* .navbtn
+{
+position: fixed;
+top: 40%;
+left: 4%;
+transform: translate(-40%,-4%);
+height: 60px;
+width: 60px;
+border-radius: 50%;
+border:#fff 2px solid;
+transition: 300ms ease-in-out;
+box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+.navbtn:nth-child(2)
+{
+top: 50%;
+left: 4.4%;
+transform: translate(-50%,-4.4%);
+}
+.navbtn:nth-child(3)
+{
+top: 60%;
+left: 4.8%;
+transform: translate(-60%,-4.8%);
+}
+.navbtn:hover
+{
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    border: #000000 2px solid;
+    height: 65px;
+    width: 65px;
+} */
+        .input-checkbox {
+            margin-right: 10px;
+        }
+
+        .education-head {
+            font-weight: 700;
+            font-size: 17px;
+        }
+
+        .resume .head .main .name {
+            font-size: 37px !important;
+        }
+
+        #skilladd,
+        #skillrem {
+            background-color: black;
+            color: white;
+            border: black;
+        }
+
+        #langadd,
+        #langrem {
+            background-color: black;
+            color: white;
+            border: black;
+        }
+
+        #achadd,
+        #achrem {
+            background-color: black;
+            color: white;
+            border: black;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        #Intadd,
+        #Intrem {
+            background-color: black;
+            color: white;
+            border: #000;
+        }
+
+        .border {
+            background-color: black !important;
+            width: 0.5px;
+            height: 850px;
+        }
+
+        #eduadd,
+        #edurem {
+            background-color: black;
+            color: white;
+            border: #000;
+        }
+
+        #secadd,
+        #secrem {
+            background-color: black;
+            color: white;
+            border: #000;
+        }
+
+        #expadd,
+        #exprem {
+            background-color: black;
+            color: white;
+            border: #000;
+        }
+
+        .navbar {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 55px;
+            width: 100vw;
+        }
+
+        .navbar img.logo {
+            max-height: 100%;
+            max-width: 100%;
+        }
+
+        .rcreater {
+            background-color: #000;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            height: 45px;
+        }
+
+        .rcreater .title1 p {
+            color: #fff;
+            font-size: 20px;
+            text-align: center;
+            padding: 8px 10px;
+            font-weight: 600;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .section2 {
+            font-family: 'Raleway', sans-serif;
+            width: 800px;
+            /* Set width to 100% of the viewport width */
+            height: 45px;
+            /* Set the height of the section */
+            display: flex;
+            justify-content: center;
+            /* Center the items horizontally */
+            align-items: center;
+            /* Center the items vertically */
+            background-color: black;
+            /* Set the background color */
+            margin-bottom: 40px;
+        }
+
+        .button {
+            width: auto;
+            height: 30px;
+            margin: 0 5px;
+            padding: 0 10px;
+            background-color: #fff;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .section2 .button:hover {
+            background-color: #c8c8c8;
+        }
+
+        .button i {
+            margin-right: 5px;
+            /* Add some space between icon and text */
+        }
+
+        .section3 {
+            border-top: 2px solid white;
+            width: 100vw;
+            background-color: black;
+            /* Set the background color */
+            color: white;
+            /* Set text color */
+            padding: 20px;
+            /* Add some padding for spacing */
+        }
+
+        .title2 {
+            font-size: 22px;
+            /* Set font size */
+            margin-bottom: 20px;
+            /* Add some margin at the bottom */
+            font-family: 'Raleway', sans-serif;
+            font-weight: 600;
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            /* Center content vertically */
+        }
+
+        .image {
+            flex: 1;
+            /* Take up remaining space */
+            text-align: center;
+            /* Center the image */
+        }
+
+        .image img {
+            margin-top: 30px;
+            max-width: 400px;
+            height: 400px;
+            border-right: 1px solid white;
+            border-left: 1px solid white;
+            border-top: 1px solid white;
+        }
+
+        .text {
+            flex: 1;
+            padding-left: 10px;
+        }
+
+        .resume-features {
+            padding: 0;
+        }
+
+        .resume-features li {
+            list-style: none;
+            font-family: 'Raleway', sans-serif;
+            font-size: 17px;
+            color: #ffffff;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .resume-features i {
+            font-size: 25px;
+            margin-right: 5px;
+        }
+
+        #pdf-icon {
+            color: rgb(255, 0, 102);
+        }
+
+        #word-icon {
+            color: rgb(0, 0, 233);
+        }
+
+        .learn-more-button {
+            font-weight: 600;
+            font-family: 'Raleway', sans-serif;
+            display: inline-block;
+            background-color: rgb(255, 0, 102);
+            color: rgb(255, 255, 255);
+            padding: 5px 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .learn-more-button:hover {
+            color: #fff;
+            background-color: rgba(255, 0, 102, 0.844);
+        }
+
+        .section3-content a {
+            margin-top: 15px;
+        }
+
+        .section4 {
+            width: 100vw;
+            text-align: center;
+            background-color: #000000;
+            /* Example background color */
+            padding: 30px 0;
+            /* Adjust padding as needed */
+        }
+
+        .section4-content {
+            max-width: 600px;
+            /* Adjust max-width as needed */
+            margin: 0 auto;
+        }
+
+        .section4-content h2 {
+            color: #fff;
+            font-family: "Kalam", cursive;
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        .section4-heading {
+            font-size: 24px;
+            /* Adjust font size as needed */
+            margin-bottom: 5px;
+            /* Adjust margin as needed */
+        }
+
+        .edit-resume-btn {
+            margin-left: 3px;
+            font-size: 15px;
+            display: inline-block;
+            padding: 4px 8px;
+            background-color: rgb(0, 255, 204);
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            border-radius: 5px;
+            /* Adjust border radius as needed */
+            font-family: 'Raleway', sans-serif;
+            font-weight: 600;
+        }
+
+        .edit-resume-btn:hover {
+            color: #000;
+            background-color: rgba(0, 255, 204, 0.849);
+        }
+
+        .footer {
+            border-top: 0.5px solid #fff;
+            width: 100vw;
+            background-color: #000;
+            /* Black background color */
+            color: #fff;
+            /* Text color */
+            text-align: center;
+            padding: 15px 0;
+            /* Adjust padding as needed */
+        }
+
+        .footer-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .footer-content p {
+            text-align: center;
+            font-family: 'Raleway', sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .website-name {
+            color: #fff;
+            font-family: 'Raleway', sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        #auth {
+            font-family: "Dancing Script", cursive;
+            margin-top: 5px;
+            font-size: 17px;
+            font-weight: 700;
+        }
+
+        .footer-content img {
+            height: 50px;
+            width: 130px;
+        }
+
+        /* Sample */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -20%);
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            z-index: 1000;
+            /* box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px; */
+            box-shadow: rgba(149, 157, 165, 0.697) 0px 8px 24px;
+            overflow-y: auto;
+            max-height: 90%;
+            margin: 20px auto;
+        }
+
+        .popup-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            background-color: #fcfcfc;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 50%;
+            font-size: 17px;
+            line-height: 1;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .blur-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(179, 179, 179, 0.226);
+            backdrop-filter: blur(20px);
+            z-index: 999;
+        }
+
+        .popup-content {
+            margin-top: 30px;
+        }
+
+        /* Responsive Design */
+        /* Mobile Styles */
+        @media (max-width: 768px) {
+            .resume {
+                width: 100%;
+                padding: 15px;
+                box-shadow: none;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            .hcontent,
+            .rcreater,
+            .head,
+            .mainbody,
+            .section2,
+            .section3,
+            .section4,
+            .footer {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .hcontent .navbar {
+                width: 100%;
+            }
+
+            .hcontent .navbar .logo {
+                width: 100px;
+            }
+
+            .title1 p {
+                font-size: 18px;
+            }
+
+            .head .main .name {
+                font-size: 20px;
+            }
+
+            .head .main .post {
+                font-size: 16px;
+            }
+
+            .contacts .content {
+                font-size: 14px;
+            }
+
+            .contacts .symbol {
+                display: none;
+            }
+
+            .mainbody {
+                flex-direction: column;
+            }
+
+            .leftside,
+            .rightside {
+                width: 100%;
+            }
+
+            .leftside .title,
+            .rightside .title {
+                font-size: 18px;
+            }
+
+            .leftside .skill,
+            .leftside .language,
+            .leftside .achieve {
+                font-size: 14px;
+            }
+
+            .rightside .education-head,
+            .rightside .experience-head {
+                font-size: 16px;
+            }
+
+            .section2 .button,
+            .section3 .text .title2,
+            .section3 .text .resume-features li,
+            .section4-content h2 {
+                font-size: 16px;
+            }
+
+            .footer-content p {
+                font-size: 12px;
+            }
+
+            .footer-content .logo {
+                width: 80px;
+            }
+
+            .footer-content #auth {
+                font-size: 10px;
+            }
+
+            .navbar img.logo {
+                width: 80px;
+                height: auto;
+            }
+
+            .section3 {
+                width: 100%;
+            }
+
+            .section3 .content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .section3 .image img {
+                width: 100%;
+                height: auto;
+            }
+
+            .section3 .text {
+                width: 100%;
+                padding: 10px;
+            }
+
+            .section3 .learn-more-button,
+            .section3 .edit-resume-btn {
+                display: block;
+                margin: 10px auto;
+                width: 20%;
+                text-align: center;
+            }
+
+            .section4 {
+                width: 100%;
+            }
+
+            .footer {
+                width: 100%;
+            }
+
+            .footer-content img {
+                width: 200px;
+            }
+
+            .new-section-div {
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hcontent">
+        <div class="navbar">
+            <!-- Logo -->
+            <img class="logo" src="https://i.ibb.co/7jX7Fj5/logo-no-background.png" alt="Logo">
+        </div>
+        <div class="rcreater">
+            <div class="title1">
+                <p>Edit your resume now</p>
+            </div>
+        </div>
+    </div>
+    <!-- Buttons -->
+
+    <!-- Editor -->
+    <div class="resume" id="resume">
+        <section id="print">
+            <div class="head">
+                <div class="main">
+                    <span class="name" contenteditable="true">YOUR NAME</span>
+                    <div class="post" contenteditable="true">Your Job Profile Ex: Full Stack Developer</div>
+                </div>
+                <div class="contacts">
+                    <span contenteditable="true" class="content">123-231-321</span><span class="symbol"> <i
+                            class="fas fa-phone"></i></span><br>
+                    <span contenteditable="true" class="content">sample_email@email.in</span><span class="symbol"> <i
+                            class="fas fa-envelope"></i></span><br>
+                    <span contenteditable="true" class="content">linkedin_Profile/username.com</span><span
+                        class="symbol"> <i class="fab fa-linkedin"></i></span><br>
+                    <span contenteditable="true" class="content">sample Address</span><span class="symbol"> <i
+                            class="fas fa-map-marker-alt"></i></i></span>
+                </div>
+            </div>
+
+            <div class="line"></div>
+            <div class="mainbody">
+                <div class="leftside">
+                    <span class="title">MY SKILLS</span><br><br>
+                    <div>
+                        <div class="skill"><span><input type="checkbox" class="input-checkbox"></span><span><i
+                                    class="fas fa-chevron-circle-right"></i></span> <span contenteditable="true">write
+                                your skill here</span></div>
+                        <div id="skills"></div>
+                        <button id="skilladd" type="button" class="btn btn-success" onclick="addskill()"><i
+                                class="fas fa-plus-circle"></i> Skill</button>
+                        <button id="skillrem" type="button" class="btn btn-danger" onclick="remskill(event)"><i
+                                class="fas fa-minus-circle"></i> Skill</button>
+                    </div>
+
+                    <br><br><span class="title">LANGUAGES</span><br><br>
+                    <div>
+                        <div class="language"><span><input type="checkbox" class="input-checkbox"></span><span
+                                contenteditable="true">LANGNAME</span> - <span contenteditable="true">level u
+                                know</span></div>
+                        <div id="languages"></div>
+
+                        <button id="langadd" type="button" class="btn btn-success" onclick="addLang()"><i
+                                class="fas fa-plus-circle"></i> Language</button>
+                        <button id="langrem" type="button" class="btn btn-danger" onclick="remLang(event)"><i
+                                class="fas fa-minus-circle"></i> Language</button>
+                    </div>
+
+                    <br><br><span class="title">ACHIEVEMENTS</span><br><br>
+                    <div>
+                        <div class="achieve"><span><input type="checkbox" class="input-checkbox"></span><span
+                                contenteditable="true">Write your achievement</span></div>
+                        <div id="achievement"></div>
+
+                        <button id="achadd" type="button" class="btn btn-success" onclick="addAch()"><i
+                                class="fas fa-plus-circle"></i> Achievement</button>
+                        <button id="achrem" type="button" class="btn btn-danger" onclick="remAch(event)"
+                            style="margin-top: 0;"><i class="fas fa-minus-circle"></i> Achievement</button>
+                    </div>
+
+                    <br><br><span class="title">INTERESTS</span><br><br>
+                    <div>
+                        <div class="achieve"><span><input type="checkbox" class="input-checkbox"></span><span
+                                contenteditable="true">Write interest</span></div>
+                        <div id="interest"></div>
+
+                        <button id="Intadd" type="button" class="btn btn-success" onclick="addInt()"><i
+                                class="fas fa-plus-circle"></i> Interest</button>
+                        <button id="Intrem" type="button" class="btn btn-danger" onclick="remInt(event)"><i
+                                class="fas fa-minus-circle"></i> Interest</button>
+                    </div>
+
+                </div>
+
+                <div class="border"></div>
+                <div class="rightside">
+                    <span class="title">CARRIER-OBJECTIVE</span><br><br>
+                    <div contenteditable="true">
+                        Here u can write the basic information about your career.</div>
+
+                    <!-- Education -->
+                    <br><br><span class="title">EDUCATION</span><br><br>
+                    <div>
+                        <div id="education">
+                            <div class="edublock">
+                                <span><input type="checkbox" class="input-checkbox"></span>
+                                <span class="education-head" contenteditable="true">YOUR DEGREE</span>
+                                <div><span contenteditable="true">Institute name</span> - <span
+                                        contenteditable="true">Passing Year</span></div>
+                            </div>
+                        </div>
+                        <button id="eduadd" type="button" class="btn btn-success" onclick="addedu()"><i
+                                class="fas fa-plus-circle"></i> Education</button>
+                        <button id="edurem" type="button" class="btn btn-danger" onclick="remedu(event)"><i
+                                class="fas fa-minus-circle"></i> Education</button>
+                    </div>
+                    <!-- Education -->
+
+                    <!-- Experience -->
+                    <br><br><span class="title">EXPERIENCE</span><br><br>
+                    <div>
+                        <div id="experience">
+                            <div class="expblock">
+                                <span><input type="checkbox" class="input-checkbox"></span>
+                                <span class="experience-head" contenteditable="true">YOUR EXPERIENCE</span>
+                                <div><span contenteditable="true">Company name</span> - <span
+                                        contenteditable="true">Year</span></div>
+                            </div>
+                        </div>
+                        <button id="expadd" type="button" class="btn btn-success" onclick="addexp()"><i
+                                class="fas fa-plus-circle"></i> Experience</button>
+                        <button id="exprem" type="button" class="btn btn-danger" onclick="remexp(event)"><i
+                                class="fas fa-minus-circle"></i> Experience</button>
+                    </div>
+                    <!-- Experience -->
+
+                    <div class="new-section-div">
+                        <div><span><input type="checkbox" class="input-checkbox"></span><span class="title"
+                                contenteditable="true">NEW SECTION</span><br><br>
+                            <div contenteditable="true">
+                                This is the description part of your new section, if empty please check the box and
+                                remove
+                                it.</div>
+                        </div>
+
+                        <div id="newsec"></div>
+                        <button id="secadd" type="button" class="btn btn-success" onclick="addsec()"><i
+                                class="fas fa-plus-circle"></i> Section</button>
+                        <button id="secrem" type="button" class="btn btn-danger" onclick="remsec(event)"><i
+                                class="fas fa-minus-circle"></i> Section</button>
+                    </div>
+                </div>
+        </section>
+    </div>
+
+    <div class="section2">
+        <button class="button" onclick="showResumePreview()"><i class="fas fa-eye"></i> Resume Preview</button>
+        <button class="button" onclick="printpdf()"><i class="fas fa-download"></i> Resume Download</button>
+    </div>
+
+    <div class="section3">
+        <div class="content">
+            <div class="image">
+                <img src="https://i.pinimg.com/474x/55/d7/3b/55d73b5a45f031f1ab5f6587a3f2e47f.jpg"
+                    alt="Resume Editor Image">
+            </div>
+
+            <div class="text">
+                <div class="title2">Resume Editor</div>
+                <ul class="resume-features">
+                    <li>Easy To Format And Edit Your Resume.</li>
+                    <li>No Need of Advanced design skills for edit.</li>
+                    <li>Ability to export the resume in <i class="fas fa-file-pdf" id="pdf-icon"></i> PDF, <i
+                            class="fas fa-file-word" id="word-icon"></i> Word.</li>
+                </ul>
+                <a href="learnmore.html" class="learn-more-button">Learn More</a>
+                <a href="ResumeBuilder.html" class="edit-resume-btn">Resume Builder</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sample -->
+    <div id="resumePopup" class="popup">
+        <button class="popup-close" onclick="hideResumePreview()">✖</button>
+        <div class="popup-content"></div>
+    </div>
+    <div id="blurBackground" class="blur-background" style="display: none;"></div>
+
+    <div class="section4">
+        <div class="section4-content">
+            <h2 class="section4-heading">Let's Land Your Dream Job Together</h2>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 All rights reserved <span class="website-name">ResumeBuilder io</span></p>
+            <img class="logo" src="https://i.ibb.co/P5BYCkg/logo-white2.png" alt="Logo">
+            <p id="auth">Venkateswar Reddy K</p>
+        </div>
+    </footer>
+    <script>
+
+        function printpdf() {
+            var content = document.getElementById("resume");
+
+            const allButtons = document.querySelectorAll("#print button");
+            allButtons.forEach(button => {
+                button.style.display = "none"; 
+            });
+
+            const allCheckboxes = document.querySelectorAll(".input-checkbox");
+            allCheckboxes.forEach(checkbox => {
+                checkbox.style.display = "none"; 
+            });
+
+            html2pdf(content, {
+                html2canvas: { scale: 1, logging: true, dpi: 500 },
+                callback: function (pdf) {
+                    allButtons.forEach(button => {
+                        button.style.display = "block";
+                    });
+                }
+            });
+        }
+
+
+        //Education Function!
+        function addedu() {
+            const head = document.createElement('div');
+            document.getElementById("education").appendChild(head);
+            head.innerHTML = ('<div class="edublock"><span><input type="checkbox" class="input-checkbox"></span><span class="education-head" contenteditable="true">YOUR DEGREE</span><div ><span contenteditable="true">Institute name</span> - <span contenteditable="true">Passing Year</span></div></div>');
+            saveresume();
+        }
+        function remedu(event) {
+            let val = 0;
+            let empty = true;
+            const allInputCheckboxes = event.target.parentElement.getElementsByClassName("input-checkbox");
+            const array = Array.from(allInputCheckboxes);
+            if (array.length === 0) {
+                alert("No fields are present to be deleted!")
+            }
+            else {
+                console.log(array);
+                array.forEach(element => {
+                    if (element.checked === true) {
+                        val = 1;
+                        element.parentElement.parentElement.remove();
+                    }
+                })
+                if (val === 0) alert("Please select the checkboxes to delete the required field!")
+            }
+            saveresume();
+        }
+        // Education Function.
+
+        //Experience Function!
+        function addexp() {
+            const head = document.createElement('div');
+            document.getElementById("experience").appendChild(head);
+            head.innerHTML = ('<div class="expblock"><span><input type="checkbox" class="input-checkbox"></span><span class="experience-head" contenteditable="true">YOUR EXPERIENCE</span><div ><span contenteditable="true">Company name</span> - <span contenteditable="true">Year</span></div></div>');
+            saveresume();
+        }
+        function remexp(event) {
+            let val = 0;
+            let empty = true;
+            const allInputCheckboxes = event.target.parentElement.getElementsByClassName("input-checkbox");
+            const array = Array.from(allInputCheckboxes);
+            if (array.length === 0) {
+                alert("No fields are present to be deleted!")
+            }
+            else {
+                console.log(array);
+                array.forEach(element => {
+                    if (element.checked === true) {
+                        val = 1;
+                        element.parentElement.parentElement.remove();
+                    }
+                })
+                if (val === 0) alert("Please select the checkboxes to delete the required field!")
+            }
+            saveresume();
+        }
+        //Experience Function.
+
+        function addskill() {
+            const head = document.createElement('div');
+            document.getElementById("skills").appendChild(head);
+            head.innerHTML = ('<div class="skill"><span><input type="checkbox" class="input-checkbox"></span><span><i class="fas fa-chevron-circle-right"></i></span>   <span contenteditable="true">write your skill here</span></div>');
+            saveresume();
+        }
+
+        function remskill(event) {
+            let val = 0;
+            const allInputCheckboxes = event.target.parentElement.getElementsByClassName("input-checkbox");
+            const array = Array.from(allInputCheckboxes);
+            if (array.length === 0) {
+                alert("No fields are present to be deleted!")
+            }
+            else {
+                console.log(array);
+                array.forEach(element => {
+                    if (element.checked === true) {
+                        val = 1;
+                        element.parentElement.parentElement.remove();
+                    }
+                })
+                if (val === 0) alert("Please select the checkboxes to delete the required field!")
+            }
+            saveresume();
+        }
+
+
+        function addLang() {
+            const head = document.createElement('div');
+            document.getElementById("languages").appendChild(head);
+            head.innerHTML = ('<div class="language"><span><input type="checkbox" class="input-checkbox"></span><span contenteditable="true">LANGNAME</span> - <span contenteditable="true">level u know</span></div>');
+            saveresume();
+        }
+        function remLang(event) {
+            let val = 0;
+            const allInputCheckboxes = event.target.parentElement.getElementsByClassName("input-checkbox");
+            const array = Array.from(allInputCheckboxes);
+            if (array.length === 0) {
+                alert("No fields are present to be deleted!")
+            }
+            else {
+                console.log(array);
+                array.forEach(element => {
+                    if (element.checked === true) {
+                        val = 1;
+                        element.parentElement.parentElement.remove();
+                    }
+                })
+                if (val === 0) alert("Please select the checkboxes to delete the required field!")
+            }
+            saveresume();
+        }
+
+
+        function addAch() {
+            const head = document.createElement('div');
+            document.getElementById("achievement").appendChild(head);
+            head.innerHTML = ('<div class="achieve" ><span><input type="checkbox" class="input-checkbox"></span><span contenteditable="true">Write your achievement</span></div>');
+            saveresume();
+        }
+        function remAch(event) {
+            let val = 0;
+            const allInputCheckboxes = event.target.parentElement.getElementsByClassName("input-checkbox");
+            const array = Array.from(allInputCheckboxes);
+            if (array.length === 0) {
+                alert("No fields are present to be deleted!")
+            }
+            else {
+                console.log(array);
+                array.forEach(element => {
+                    if (element.checked === true) {
+                        val = 1;
+                        element.parentElement.parentElement.remove();
+                    }
+                })
+                if (val === 0) alert("Please select the checkboxes to delete the required field!")
+            }
+            saveresume();
+        }
+
+
+        function addInt() {
+            const head = document.createElement('div');
+            document.getElementById("interest").appendChild(head);
+            head.innerHTML = ('<div class="achieve" ><span><input type="checkbox" class="input-checkbox"></span><span contenteditable="true">Write interest</span></div>');
+            saveresume();
+        }
+        function remInt(event) {
+            let val = 0;
+            const allInputCheckboxes = event.target.parentElement.getElementsByClassName("input-checkbox");
+            const array = Array.from(allInputCheckboxes);
+            if (array.length === 0) {
+                alert("No fields are present to be deleted!")
+            }
+            else {
+                array.forEach(element => {
+                    if (element.checked === true) {
+                        val = 1;
+                        element.parentElement.parentElement.remove();
+                    }
+                })
+                if (val === 0) alert("Please select the checkboxes to delete the required field!")
+            }
+            saveresume();
+        }
+
+        let maxNewSection = 1;
+        function addsec() {
+            if (maxNewSection < 2) {
+                const head = document.createElement('div');
+                document.getElementById("newsec").appendChild(head);
+                if (maxNewSection === 0) {
+                    head.innerHTML = ('<div><span><input type="checkbox" class="input-checkbox"></span><span class="title" contenteditable="true">NEW SECTION</span><br><br><div contenteditable="true">This is the description part of your new section, if empty please check the box and remove it.</div></div>');
+                }
+                else {
+                    head.innerHTML = ('<div><br><br><span><input type="checkbox" class="input-checkbox"></span><span class="title" contenteditable="true">NEW SECTION</span><br><br><div contenteditable="true">This is the description part of your new section, if empty please check the box and remove it.</div></div>');
+                }
+
+                maxNewSection = maxNewSection + 1;
+            }
+            else {
+                alert("Atmost 2 NEW SECTION can be added!")
+
+            }
+            saveresume();
+        }
+        function remsec(event) {
+            let val = 0;
+            const allInputCheckboxes = event.target.parentElement.getElementsByClassName("input-checkbox");
+            const array = Array.from(allInputCheckboxes);
+            if (array.length === 0) {
+                alert("No fields are present to be deleted!")
+            }
+            else {
+                console.log(array);
+                array.forEach(element => {
+                    if (element.checked === true) {
+                        val = 1;
+                        maxNewSection = maxNewSection - 1;
+                        element.parentElement.parentElement.remove();
+                    }
+                })
+                if (val === 0) alert("Please select the checkboxes to delete the required field!")
+            }
+            saveresume();
+        }
+
+        function saveresume() {
+            var sec = document.getElementById("print");
+            value1 = sec.innerHTML;
+            var info = document.getElementById("custinfo");
+            info.value = value1;
+        }
+
+        //Preview
+        function showResumePreview() {
+            // Get the content of the resume div
+            var resumeContent = document.getElementById("resume").innerHTML;
+
+            // Show the popup
+            var popup = document.getElementById("resumePopup");
+            popup.style.display = "block";
+
+            document.getElementById("blurBackground").style.display = "block";
+            // Insert the resume content into the popup
+            var popupContent = popup.querySelector(".popup-content");
+            popupContent.innerHTML = resumeContent;
+        }
+
+        function hideResumePreview() {
+            // Hide the popup
+            document.getElementById("resumePopup").style.display = "none";
+
+            document.getElementById("blurBackground").style.display = "none";
+        }
+
+        //Download
+
+    </script>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.0/html2pdf.bundle.min.js"></script>
+<!-- <script src="script.js"></script> -->
+
+</html>

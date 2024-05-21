@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="icon" href="cv.png" type="image/x-icon">
+  <!-- Custom CSS -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kalam:wght@300;400;700&family=Kolker+Brush&display=swap');
+
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .navbar {
+      background-color: black;
+      height: 55px;
+    }
+
+    .navbar-nav a {
+      color: rgb(255, 255, 255) !important;
+      margin-right: 10px;
+      border-radius: 5px;
+      padding: 3px 4px;
+      filter: brightness(100%);
+    }
+
+    .navbar-nav a span {
+      color: rgb(255, 255, 255);
+      font-family: "Nunito", sans-serif;
+      font-size: 16px;
+    }
+
+    .navbar-nav a:hover {
+      background-color: rgba(167, 167, 167, 0.664);
+    }
+
+    .navbar-nav a span:hover {
+      color: whitesmoke;
+    }
+
+    .navbar-brand img {
+      max-height: 40px;
+    }
+
+    /* Section1 */
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    .header-content img {
+      max-width: 550px;
+      height: auto;
+      box-shadow: rgba(149, 157, 165, 0.697) 0px 8px 24px;
+    }
+
+    .header-text {
+      flex: 1;
+      margin-left: 20px;
+      text-align: left;
+    }
+
+    .header-text h1 {
+      font-size: 32px;
+      font-family: "Plus Jakarta Sans", sans-serif;
+      font-weight: 500;
+    }
+
+    .header-text p {
+      font-size: 15px;
+      font-family: "Raleway", sans-serif;
+      font-weight: 500;
+    }
+
+    .btn-create-resume {
+      font-size: 18px;
+      background-color: black !important;
+      color: white !important;
+      border: none;
+      padding: 7px 20px;
+      border-radius: 20px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+      display: inline-block;
+      font-family: "Nunito", sans-serif;
+      font-weight: 600;
+      box-shadow: rgba(149, 157, 165, 0.589) 0px 8px 24px;
+    }
+
+    .btn-create-resume:hover {
+      color: rgb(255, 255, 255) !important;
+      background-color: rgba(33, 33, 33, 0.704) !important;
+    }
+
+    .side-by-side {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .side-by-side p {
+      font-size: 20px;
+      flex: 1;
+      margin: 0;
+      text-align: center;
+      font-family: "Plus Jakarta Sans", sans-serif;
+      font-weight: 400;
+    }
+
+    .side-by-side .divider {
+      border-left: 3px solid #555555;
+      height: 35px;
+    }
+
+    .side-by-side .arrow {
+      font-size: 27px;
+      margin-right: 3px;
+    }
+
+    /* Section2 */
+    .section2 .line hr {
+      border: none;
+      height: 1.5px;
+      background-color: #000000;
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .section2 .text2 {
+      width: 90%;
+      margin: 30px auto;
+    }
+
+    .section2 .text2 h3 {
+      font-size: 18px;
+      font-family: "Nunito", sans-serif;
+      text-align: center;
+      line-height: 25px;
+      font-weight: 600;
+    }
+
+    .section2 .image img {
+      height: auto;
+      max-width: 640px;
+      margin-left: 25%;
+      filter: brightness(120%);
+      margin-top: 20px;
+    }
+
+    /* Section3 */
+    .section3 {
+      width: 80%;
+      margin: 10px auto;
+      font-family: "Nunito", sans-serif;
+    }
+
+    .section3 .line hr {
+      border: none;
+      height: 0.4px;
+      background-color: #000000;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .section3 .text3 {
+      background-color: rgba(188, 188, 188, 0.144);
+    }
+
+    .section3 .text3 h3 {
+      text-align: center;
+      margin-top: 20px;
+      font-weight: 500;
+    }
+
+    .section3 .text3 p {
+      width: 60%;
+      text-align: center;
+      margin: 0 auto;
+      font-weight: 350;
+    }
+
+    /* AOD-Button */
+    #resumeBtnContainer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 7px 0;
+      /* background-color: #0000001c; */
+      animation: slideUp 1s ease forwards;
+      opacity: 0;
+      transition: opacity 1s ease;
+    }
+
+    @keyframes slideUp {
+      from {
+        transform: translateY(100%);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    button#createResumeBtn {
+      display: block;
+      margin: 0 auto;
+      background-color: #000000;
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 22px;
+      cursor: pointer;
+      font-size: 16px;
+      font-family: "Raleway", sans-serif;
+      font-weight: 600;
+      opacity: 0;
+      transition: opacity 1s ease;
+    }
+
+    #resumeBtnContainer.show,
+    button#createResumeBtn.show {
+      opacity: 1;
+    }
+
+    button#createResumeBtn:hover {
+      background-color: #3c3c3cbb;
+    }
+
+    /* Section4 */
+    .section4 {
+      width: 80%;
+      margin: 20px auto;
+      font-family: "Nunito", sans-serif;
+      background-color: rgba(255, 255, 255, 0.144);
+      font-weight: 500;
+    }
+
+    .section4 .line hr {
+      border: none;
+      height: 0.4px;
+      background-color: #000000;
+      width: 100%;
+      margin: 10 auto;
+    }
+
+    .section4 h3 {
+      padding: 5px 3px;
+      text-align: center;
+      margin: 10px 2px;
+      background-color: #000000;
+      color: #ffffff;
+      font-size: 25px;
+    }
+
+    .tableinfo {
+      margin: 15px;
+    }
+
+    .tbleft {
+      background-color: #000000;
+      text-align: center;
+      color: #ffffff;
+      width: 30%;
+    }
+
+    .tbright {
+      border-right: 1px solid rgb(210, 210, 210);
+      background-color: #f2f2f2;
+    }
+
+    .tbleft:hover {
+      background-color: #ffffff;
+      color: #000000;
+      border: 1px solid rgb(247, 247, 247);
+      border-right: #000000;
+    }
+
+    .tbleft:hover+.tbright {
+      background-color: black;
+      color: white;
+    }
+
+    table {
+      margin: 30px auto;
+      width: 90%;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 8px;
+      text-align: left;
+    }
+
+    /* Section-Buttons */
+    .section-Button {
+      width: 90%;
+      display: flex;
+      align-items: center;
+      margin: 20px auto;
+      font-family: "Nunito", sans-serif;
+      font-weight: 500;
+    }
+
+    .section-Button .left-side {
+      flex: 1;
+    }
+
+    .section-Button .right-side {
+      flex: 2;
+    }
+
+    .section-Button img {
+      width: 100%;
+    }
+
+    .section-Button .content {
+      padding: 20px;
+      background-color: #f2f2f2;
+      width: 90%;
+    }
+
+    .section-Button h3 {
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+
+    .section-Button .buttons {
+      margin-top: 10px;
+    }
+
+    .section-Button .buttons button {
+      padding: 5px 15px;
+      margin-right: 10px;
+      border: none;
+      border-radius: 20px;
+      background-color: #000000;
+      color: white;
+      cursor: pointer;
+      font-weight: 600;
+      box-shadow: rgba(149, 157, 165, 0.697) 0px 8px 24px;
+    }
+
+    .section-Button .buttons button:hover {
+      background-color: #00000099;
+    }
+
+    .section-Button .buttons button:last-child {
+      margin-right: 0;
+    }
+
+    /* section-Buttons */
+
+    /* Section5 */
+    .section5 {
+      margin: 0 auto;
+      width: 90%;
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      font-family: "Nunito", sans-serif;
+      font-weight: 600;
+    }
+
+    .section5 .subsection {
+      flex: 1;
+      margin-right: 20px;
+      text-align: center;
+      background-color: #f2f2f2;
+      padding: 20px;
+      border-radius: 5px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      border-radius: 10px;
+    }
+
+    .section5 .subsection:hover {
+      transform: translateY(-10px);
+    }
+
+    .section5 .icon {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .section5 .description h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .section5 .description p {
+      font-size: 14px;
+    }
+
+    /* Footer */
+    .footer {
+      width: 100vw;
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 20px;
+    }
+
+    .footer-content {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .footer-content p {
+      color: #fff;
+      text-align: center;
+      font-family: "Nunito", sans-serif;
+      font-weight: 600;
+    }
+
+    .footer-content img {
+      height: 50px;
+      width: 130px;
+    }
+
+    .website-name {
+      color: #fff;
+      font-family: "Nunito", sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    #auth {
+      font-family: "Dancing Script", cursive;
+      margin-top: 8px;
+      font-size: 17px;
+    }
+
+    /* Responsive Design */
+
+    @media only screen and (max-width: 768px) {
+
+      /* Navbar */
+      .navbar {
+        height: auto;
+        padding: 5px 0;
+      }
+
+      .navbar-brand img {
+        max-height: 40px;
+        margin-left: 10px;
+      }
+
+      .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
+
+      .navbar-nav a {
+        margin: 5px 0;
+        padding: 5px 10px;
+        width: 100%;
+        text-align: center;
+      }
+
+      .navbar-nav a span {
+        font-size: 14px;
+      }
+
+      /* Section1 */
+      .header-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .header-content img {
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .header-text {
+        margin: 0;
+      }
+
+      .header-text h1 {
+        font-size: 24px;
+        text-align: center;
+      }
+
+      .header-text p {
+        font-size: 14px;
+      }
+
+      .btn-create-resume {
+        font-size: 17px;
+        padding: 10px 15px;
+      }
+
+      .side-by-side {
+        flex-direction: column;
+      }
+
+      .side-by-side p {
+        font-size: 16px;
+      }
+
+      .side-by-side .divider {
+        display: none;
+      }
+
+      /* Section2 */
+      .section2 .text2 h3 {
+        margin-top: 0;
+        font-size: 16px;
+        line-height: 22px;
+      }
+
+      .section2 .image img {
+        max-width: 100%;
+        margin: 0 auto;
+        display: block;
+      }
+
+      /* Section3 */
+      .section3 .text3 h3 {
+        font-size: 22px;
+      }
+
+      .section3 .text3 p {
+        width: 100%;
+        padding: 0 10px;
+      }
+
+      /* Section4 */
+      .section4 {
+        width: 100%;
+      }
+
+      .section4 h3 {
+        font-size: 20px;
+        padding: 10px 5px;
+      }
+
+      .tableinfo {
+        padding: 0 10px;
+      }
+
+      .tbleft,
+      .tbright {
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 10px 10px;
+      }
+
+      table {
+        width: 100%;
+        border: none;
+      }
+
+      /* Section-Buttons */
+      .section-Button {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .section-Button .left-side,
+      .section-Button .right-side {
+        width: 100%;
+      }
+
+      .section-Button img {
+        margin-bottom: 20px;
+      }
+
+      .section-Button .content {
+        width: 100%;
+      }
+
+      .section-Button .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .section-Button .buttons button {
+        font-size: 18px;
+        padding: 5px 0;
+        margin-bottom: 10px;
+        width: 80%;
+        margin-right: 0;
+      }
+
+      /* Section5 */
+      .section5 {
+        flex-direction: column;
+      }
+
+      .section5 .subsection {
+        margin-bottom: 20px;
+        margin-right: 0;
+      }
+
+      .section5 .subsection:last-child {
+        margin-bottom: 0;
+      }
+
+      /* Footer */
+      .footer {
+        padding: 10px 0;
+      }
+
+      .footer-content p {
+        font-size: 14px;
+      }
+
+      .footer-content img {
+        width: 100px;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand">
+        <img src="https://i.ibb.co/rdFwdtb/logo-whitenew.png" alt="Logo">
+        <!-- Replace 'logo.png' with your image path -->
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <!-- Add your elements here -->
+          <li class="nav-item"><a class="nav-link" href="learnmore.html"><span>Resume Examples</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="learnmore.html"><span>
+                Resume Templates</span></a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="#"><span>My Account</span></a></li> -->
+          <li class="nav-item"><a class="nav-link" href="ResumeBuilder.html"><span>Build My Resume</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navigation -->
+
+  <!-- Section1 -->
+  <section class="header-section">
+    <div class="header-content">
+      <!-- Image -->
+      <div class="header-image">
+        <img src="https://s3-alpha.figma.com/hub/file/3746585818/4ce32f63-eb09-4d4b-8356-26b71345624f-cover.png"
+          alt="Resume Builder Image">
+      </div>
+      <!-- Text content -->
+      <div class="header-text">
+        <h1>The Best Online Resume Builder</h1>
+        <p>Easily create the perfect resume for any job using our best-in-class resume builder platform.</p>
+        <div style="text-align: center;">
+          <a href="ResumeBuilder.html" class="btn btn-create-resume">Create Resume Now</a>
+        </div>
+        <div class="side-by-side">
+          <p><span class="arrow">&uarr;</span> 2x More interviews</p>
+          <div class="divider"></div>
+          <p><span class="arrow">&uarr;</span> 25% More job offers</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section1 -->
+
+  <!-- Section2 -->
+  <div class="section2">
+    <!-- <div class="line"><hr></div> -->
+    <div class="text2">
+      <h3>Get free, easy-to-use resume templates designed to meet expectations, ensuring your resume follows all the
+        right rules.</h3>
+      <h3>"Ensures your resume follows proper formatting guidelines and includes all necessary information for easy
+        readability."</h3>
+    </div>
+    <div class="image">
+      <img
+        src="https://marketplace.canva.com/EAE6Ae0n8i0/1/0/1131w/canva-white-and-black-minimalist-professional-resume-template-qwZyNuey1q0.jpg"
+        alt="image">
+    </div>
+  </div>
+  <!-- Section2 -->
+
+  <!-- Section3 -->
+  <div class="section3">
+    <div class="line">
+      <hr>
+    </div>
+    <div class="text3">
+      <h3>Use the best resume maker as your guide!</h3>
+      <p>Getting that dream job can seem like an impossible task. We're here to change that. Give yourself a real
+        advantage with the best online resume maker: created by experts, imporved by data, trusted by millions of
+        professionals.</p>
+    </div>
+  </div>
+  <!-- Section3 -->
+
+  <!-- AOD-Button -->
+  <div id="resumeBtnContainer">
+    <button id="createResumeBtn">Create Resume</button>
+  </div>
+  <!-- AOD-Button -->
+
+  <!-- Section4 -->
+  <div class="section4">
+    <h3>Key points to include in resume</h3>
+    <div class="tableinfo">
+      <table>
+        <tr>
+          <td class="tbleft">Personal Information</td>
+          <td class="tbright">Your name, phone number, email address, and optionally, your LinkedIn profile or personal
+            website.</td>
+        </tr>
+        <tr>
+          <td class="tbleft">Resume Summary Or Objective</td>
+          <td class="tbright">A brief statement summarizing your professional background, skills, and career goals.</td>
+        </tr>
+        <tr>
+          <td class="tbleft">Skills Section</td>
+          <td class="tbright">List relevant technical, soft, and transferable skills that are applicable to the job
+            you're applying for.</td>
+        </tr>
+        <tr>
+          <td class="tbleft">Work Experience</td>
+          <td class="tbright">Detail your work history in reverse chronological order, including job titles, company
+            names, locations, and dates of employment.</td>
+        </tr>
+        <tr>
+          <td class="tbleft">Education</td>
+          <td class="tbright">Include your educational background, starting with your highest level of education
+            attained.</td>
+        </tr>
+        <tr>
+          <td class="tbleft">Certifications and Training</td>
+          <td class="tbright">If you have relevant certifications or have completed any additional training programs,
+            include them in a separate section.</td>
+        </tr>
+        <tr>
+          <td class="tbleft">Projects or Portfolio</td>
+          <td class="tbright">If applicable, showcase any relevant projects you've worked on or a portfolio of your
+            work.</td>
+        </tr>
+        <tr>
+          <td class="tbleft">Awards and Honors</td>
+          <td class="tbright">Mention any awards, honors, or recognitions you've received throughout your career or
+            academic journey.</td>
+        </tr>
+        <tr>
+          <td class="tbleft">Volunteer Experience</td>
+          <td class="tbright">Include any volunteer work or community service experience that demonstrates relevant
+            skills or qualities.</td>
+        </tr>
+        <tr>
+          <td class="tbleft">Professional Memberships</td>
+          <td class="tbright">If you're a member of any professional organizations or associations related to your
+            field, mention them.</td>
+        </tr>
+        <tr>
+          <td class="tbleft">Additional Sections</td>
+          <td class="tbright">Depending on your background and the job you're applying for, you may include additional
+            sections such as languages spoken, interests/hobbies, or publications.</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <!-- Section4 -->
+
+  <!-- Section-Button -->
+  <div class="section-Button">
+    <div class="section-Button">
+      <div class="left-side">
+        <img src="https://i.etsystatic.com/47087278/r/il/8bd1e9/5549820841/il_fullxfull.5549820841_9rlj.jpg"
+          alt="Resume Editor">
+      </div>
+      <div class="right-side">
+        <div class="content">
+          <h3>Quick Edit Your Resume!</h3>
+          <p>Our resume editor allows you to customize your resume according to your preferences and needs.</p>
+          <div class="buttons">
+            <button id="resumeBuilderBtn">Resume Builder</button>
+            <button id="resumeEditorBtn">Resume Editor</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Section-Button -->
+
+  <!-- Section5 -->
+  <div class="section5">
+    <div class="subsection">
+      <div class="icon">
+        <i class="fas fa-trophy"></i>
+      </div>
+      <div class="description">
+        <h3>Make a resume that wins interviews!</h3>
+        <p>Use our resume maker with its advanced creation tools to tell professional story that engages recruiters,
+          hiring managers.</p>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <div class="icon">
+        <i class="fas fa-user"></i>
+      </div>
+      <div class="description">
+        <h3>Resume writing made easy!</h3>
+        <p>Resume writing has never been this effortless. Pre-generated text, visual designs and more - all already
+          integrated into the resume maker. Just fill in your details.</p>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <div class="icon">
+        <i class="fas fa-check-circle"></i>
+      </div>
+      <div class="description">
+        <h3>A recruiter-tested CV maker tool</h3>
+        <p>Our resume builder and its pre-generated content are tested by recruiters and IT experts. We help your CV
+          become truly competitive in the hiring process.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Section5 -->
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2024 All rights reserved <span class="website-name">ResumeBuilder io</span></p>
+      <img class="logo" src="https://i.ibb.co/P5BYCkg/logo-white2.png" alt="Logo">
+      <p id="auth">Venkateswar Reddy K</p>
+    </div>
+  </footer>
+  <!-- Footer -->
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const createResumeBtn = document.getElementById('createResumeBtn');
+      const section2 = document.querySelector('.section2');
+      const resumeBtnContainer = document.getElementById('resumeBtnContainer');
+      const footer = document.querySelector('.footer');
+      let isScrolled = false;
+
+      function handleScrollAnimation() {
+        const section2Top = section2.offsetTop;
+        const scrollPosition = window.scrollY;
+        const windowHeight = window.innerHeight;
+        const footerOffset = footer.getBoundingClientRect().top;
+
+        if (scrollPosition >= section2Top && footerOffset > windowHeight && !isScrolled) {
+          createResumeBtn.style.display = 'block';
+          resumeBtnContainer.style.opacity = '1';
+          resumeBtnContainer.style.bottom = '0';
+          createResumeBtn.classList.add('show');
+          resumeBtnContainer.classList.add('show');
+          isScrolled = true;
+        } else if ((scrollPosition < section2Top || footerOffset <= windowHeight) && isScrolled) {
+          createResumeBtn.style.display = 'none';
+          resumeBtnContainer.style.opacity = '0';
+          resumeBtnContainer.style.bottom = '-60px';
+          createResumeBtn.classList.remove('show');
+          resumeBtnContainer.classList.remove('show');
+          isScrolled = false;
+        }
+      }
+
+      handleScrollAnimation();
+      window.addEventListener('scroll', handleScrollAnimation);
+    });
+
+    var createResumeBtn = document.getElementById("createResumeBtn");
+
+    createResumeBtn.addEventListener("click", function () {
+      window.location.href = "ResumeBuilder.html";
+    });
+
+    var resumeBuilderBtn = document.getElementById("resumeBuilderBtn");
+    var resumeEditorBtn = document.getElementById("resumeEditorBtn");
+
+    resumeBuilderBtn.addEventListener("click", function () {
+      window.location.href = "ResumeBuilder.html";
+    });
+
+    resumeEditorBtn.addEventListener("click", function () {
+      window.location.href = "ResumeEditor.html";
+    });
+  </script>
+
+  <!-- Bootstrap JS (optional) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
