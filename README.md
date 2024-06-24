@@ -4,7 +4,7 @@ Analog Clock Web-site-Link: https://analog-clock-design7.netlify.app/
 ![Screenshot 2024-02-24 121448](https://github.com/Venkatesh771/Web-Development-Projects/assets/126060585/adf00053-787d-4629-ac67-924728963105)
 
 #
-Digital Clock Web-site-Link: https://xkpl12bvb5jffgeiu0qpyq.on.drv.tw/www.DigitalClock.blog/Index.html
+Digital Clock Web-site-Link: https://digital-clock-design7.netlify.app/
 
 ![Screenshot 2024-02-23 221231](https://github.com/Venkatesh771/Web-Development-Projects/assets/126060585/60dd41ad-5f95-487e-b073-1b600b303740)
 
