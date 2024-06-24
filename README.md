@@ -9,7 +9,7 @@ Digital Clock Web-site-Link: https://digital-clock-design7.netlify.app/
 ![Screenshot 2024-02-23 221231](https://github.com/Venkatesh771/Web-Development-Projects/assets/126060585/60dd41ad-5f95-487e-b073-1b600b303740)
 
 #
-Calculator Web-Site-Link: https://lpzd88pub7h8cfc6wps1vq.on.drv.tw/www.Calculator.blog/Caclulator.html
+Calculator Web-Site-Link: https://calculator-design7.netlify.app/
 
 ![image](https://github.com/Venkatesh771/Web-Development-Projects/assets/126060585/f9974f89-c2ed-46a3-9444-4de96f45ff06)
 
