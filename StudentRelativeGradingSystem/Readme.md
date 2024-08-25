@@ -16,8 +16,8 @@
 
 <h2 align="left">Tech Stack</h2>
 
-- **Front End**: HTML, CSS, JavaScript, Boostrap, jquery
-- **Back End**: PHP, MYSQL
+- **Front End**: HTML, CSS, JavaScript, Boostrap, jquery.
+- **Back End**: PHP, MYSQL Data Base.
 - **GitHub**: For hosting the project repository and collaborating with others.
 - **Visual Studio Code**: As the code editor for writing and managing the project files.
 - **Server**: XAMPP Control Panel Server.
