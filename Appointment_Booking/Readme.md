@@ -17,4 +17,4 @@
 - **GitHub**: For hosting the project repository and collaborating with others.
 - **Visual Studio Code**: As the code editor for writing and managing the project files.
 - **Server**: XAMPP Control Panel Server.
-- **API**: w3forms for e-mail notifications.
+- **API**: W3forms for E-mail notifications.
