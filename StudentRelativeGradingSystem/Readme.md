@@ -1,5 +1,5 @@
 
-<h1 align="left">Student Relative Grading System <img align="center" src="https://www.kindpng.com/picc/m/78-788160_transparent-stock-market-icon-png-png-download.png" alt="venkatreddy" height="50" width="50" /></h1>
+<h1 align="left">Student Relative Grading System <img align="center" src="https://www.kindpng.com/picc/m/78-788160_transparent-stock-market-icon-png-png-download.png" alt="venkatreddy" height="50" width="65" /></h1>
 <h3 align="center">About Relative Grading <img align="center" src="https://cdn-icons-png.flaticon.com/512/9913/9913579.png" alt="venkatreddy" height="40" width="40" /></h3>
 
 1. **Comparison-Based**: Grades are assigned based on a comparison of students' scores, often following a normal distribution (bell curve). This ensures that only a certain percentage of students receive top grades, regardless of their absolute scores.
