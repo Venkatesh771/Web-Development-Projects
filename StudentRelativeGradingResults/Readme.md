@@ -1,5 +1,4 @@
 <h1 align="left">Student Relative Grading System</h1>
--<p>Student Results</p>
 
 ![Screenshot 2024-08-25 160657](https://github.com/user-attachments/assets/67e719c6-dfad-4b2e-b430-6cf60d94bb12)
 ![Screenshot 2024-08-25 160741](https://github.com/user-attachments/assets/5fb629a7-d910-4c87-882a-d52a23ae4e2d)
