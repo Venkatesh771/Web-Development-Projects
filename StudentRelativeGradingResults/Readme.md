@@ -1,5 +1,5 @@
 <h1 align="left">Student Relative Grading System</h1>
-## Student Relative Grading System
+<h2 align="center">Student Relative Grading System</h2>
 
 1. **Comparison-Based**: Grades are assigned based on a comparison of students' scores, often following a normal distribution (bell curve). This ensures that only a certain percentage of students receive top grades, regardless of their absolute scores.
 
