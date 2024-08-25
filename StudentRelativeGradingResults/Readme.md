@@ -13,6 +13,7 @@
 
 6. **Use Cases**: This system is commonly used in competitive academic environments where distinguishing between top performers is crucial.
 
+<h2 align="left">Tech Stack</h2>
 - **Markdown**: For creating structured and easily readable documentation.
 - **Git**: For version control and tracking changes to the project.
 - **GitHub**: For hosting the project repository and collaborating with others.
