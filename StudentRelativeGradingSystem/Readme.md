@@ -22,7 +22,7 @@
 - **Visual Studio Code**: As the code editor for writing and managing the project files.
 - **Server**: XAMPP Control Panel Server.
 
-<h2>Page Demo<img align="center" src="https://cdn-icons-png.flaticon.com/512/1185/1185202.png" alt="venkatreddy" height="50" width="60" /></h2>
+<h2>Page Demo <img align="center" src="https://cdn-icons-png.flaticon.com/512/1091/1091831.png" alt="venkatreddy" height="50" width="50" /></h2>
 
 - **Home Page**: Students can navigate to important sections directly from here, making it the central point of interaction to check results.
 
