@@ -1,6 +1,6 @@
 
 <h1 align="left">Student Relative Grading System</h1>
-<h3 align="center">About Relative Grading</h3>
+<h3 align="center">About Relative Grading<img align="center" src="https://static.vecteezy.com/system/resources/previews/021/193/713/original/gold-medal-ribbon-cartoon-flat-icon-illustration-free-png.png" alt="venkatreddy" height="30" width="40" /></h3>
 
 1. **Comparison-Based**: Grades are assigned based on a comparison of students' scores, often following a normal distribution (bell curve). This ensures that only a certain percentage of students receive top grades, regardless of their absolute scores.
 
