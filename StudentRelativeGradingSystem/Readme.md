@@ -30,8 +30,8 @@
 - **View Results Page**: Students can access their grades and performance metrics on this page with student Id.
   
 ![Screenshot 2024-08-25 160741](https://github.com/user-attachments/assets/5fb629a7-d910-4c87-882a-d52a23ae4e2d)
-- **Student Results Page**: Students can view their overall performance and specific subject grades here.
-- 
+- **Student Results Page**: Students can view their overall performance and specific subject grades here by opening view results.
+  
 ![Screenshot 2024-08-25 160802](https://github.com/user-attachments/assets/c03f700f-46b3-44a5-b903-3fba7d671552)
 ![Screenshot 2024-08-25 160812](https://github.com/user-attachments/assets/239518c3-2c28-4091-8eff-7c8a2f6497bd)
 ![Screenshot 2024-08-25 160919](https://github.com/user-attachments/assets/27d1fb8c-e36f-402e-ad58-b32ece9dcd33)
