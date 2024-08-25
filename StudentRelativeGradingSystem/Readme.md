@@ -14,7 +14,7 @@
 
 6. **Use Cases**: This system is commonly used in competitive academic environments where distinguishing between top performers is crucial.
 
-<h2 align="left">Tech Stack <img align="center" src="https://www.svgrepo.com/show/408381/stack-apps-layers.svg" alt="venkatreddy" height="50" width="60" /></h2>
+<h2 align="left">Tech Stack<img align="center" src="https://www.svgrepo.com/show/408381/stack-apps-layers.svg" alt="venkatreddy" height="50" width="60" /></h2>
 
 - **Front End**: HTML, CSS, JavaScript, Boostrap, jquery.
 - **Back End**: PHP, MYSQL Data Base.
