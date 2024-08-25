@@ -36,5 +36,11 @@
 - **Student Results**: This section displays each student's overall academic performance. It includes detailed grades for specific subjects and students can track their progress and identify areas for improvement.
 
 ![Screenshot 2024-08-25 160812](https://github.com/user-attachments/assets/239518c3-2c28-4091-8eff-7c8a2f6497bd)
+- **Admin Login Page**: This secure access point allows administrators to authenticate and gain entry to the system, ensuring that only authorized personnel can manage and overall operations.
+
 ![image](https://github.com/user-attachments/assets/f7c16d8e-6986-4019-a048-53fd8895034d)
+- **Admin Page**: Administrators can manage student records, update results, and oversee system operations from this section.
+- They can configure grading criteria and control access permissions for different user roles.
+- Additionally, the admin section allows for the generation of detailed reports and analytics to support decision-making.
+  
 ![Screenshot 2024-08-25 160919](https://github.com/user-attachments/assets/27d1fb8c-e36f-402e-ad58-b32ece9dcd33)
