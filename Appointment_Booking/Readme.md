@@ -1,4 +1,4 @@
-<h1 align="left">Hospital Appointment Booking System.</h1>
+<h1 align="left">Hospital Appointment Booking System</h1>
 
 <h3 align="center">About Appointment Booking</h3>
 
@@ -9,3 +9,12 @@
 3. **Appointment Booking:**: Patients can view available doctors, select preferred time slots, and book appointments based on their convenience.
 4. **Automated Notifications:**: The system sends automated reminders to both patients and doctors about upcoming appointments via email or SMS.
 5. **Reports and Analytics:**: The system generates reports on patient visits, doctor schedules, and other important metrics for hospital management.
+
+<h2 align="left">Tech Stack<img align="center" src="https://www.svgrepo.com/show/408381/stack-apps-layers.svg" alt="venkatreddy" height="50" width="60" /></h2>
+
+- **Front End**: HTML, CSS, JavaScript, Boostrap.
+- **Back End**: PHP, MYSQL Data Base.
+- **GitHub**: For hosting the project repository and collaborating with others.
+- **Visual Studio Code**: As the code editor for writing and managing the project files.
+- **Server**: XAMPP Control Panel Server.
+- **API**: w3forms for e-mail notifications.
