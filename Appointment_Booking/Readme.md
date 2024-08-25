@@ -19,4 +19,4 @@
 - **Server**: XAMPP Control Panel Server.
 - **API**: W3forms for E-mail notifications.
 
-  <h3 align="center"><a href="http://hospitalappointmentbooking.rf.gd/">Check Demo</a></h3>
+  <h3 align="center"><a href="https://hospitalappointmentbooking.rf.gd/">Check Demo</a></h3>
