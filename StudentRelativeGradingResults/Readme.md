@@ -15,11 +15,11 @@
 
 <h2 align="left">Tech Stack</h2>
 
-- **Markdown**: For creating structured and easily readable documentation.
-- **Git**: For version control and tracking changes to the project.
+- **Front End**: HTML, CSS, JavaScript, Boostrap, jquery
+- **Back End**: PHP, MYSQL
 - **GitHub**: For hosting the project repository and collaborating with others.
 - **Visual Studio Code**: As the code editor for writing and managing the project files.
-- **Python/Java/C++ (if applicable)**: Used as the primary programming language for implementing the grading system (replace with the relevant technology).
+- **Server**: XAMPP Control Panel Server.
 
 
 ![Screenshot 2024-08-25 160657](https://github.com/user-attachments/assets/67e719c6-dfad-4b2e-b430-6cf60d94bb12)
