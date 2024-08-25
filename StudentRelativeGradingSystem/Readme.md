@@ -23,7 +23,8 @@
 - **Server**: XAMPP Control Panel Server.
 
 <h3>Page Demo</h3>
-- <p>Students can view the results directly.</p>
+
+- **Home Page**: Students can navigate to important sections directly from here, making it the central point of interaction to check results.
 
 ![Screenshot 2024-08-25 160657](https://github.com/user-attachments/assets/67e719c6-dfad-4b2e-b430-6cf60d94bb12)
 ![Screenshot 2024-08-25 160741](https://github.com/user-attachments/assets/5fb629a7-d910-4c87-882a-d52a23ae4e2d)
