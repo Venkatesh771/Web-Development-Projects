@@ -1,6 +1,6 @@
 <h2 align="left">Hospital Appointment Booking System <img align="center" src="https://cdn-icons-png.flaticon.com/512/8767/8767359.png" alt="venkatreddy" height="50" width="50" /></h2>
 
-<h3 align="center">About Appointment Booking <img align="center" src="https://cdn-icons-png.flaticon.com/512/8101/8101319.png" alt="venkatreddy" height="40" width="40" /></h3>
+<h3 align="center">About Appointment Booking <img align="center" src="https://icons.veryicon.com/png/o/miscellaneous/icon-library-of-x-bacteria/appointment-4.png" alt="venkatreddy" height="50" width="50" /></h3>
 
 <p>The Hospital Appointment Booking System is a project designed to simplify and streamline the process of booking appointments with doctors. This system is typically used by hospitals and clinics to manage patient appointments, doctor availability, and scheduling conflicts.</p>
 
