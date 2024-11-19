@@ -10,6 +10,8 @@
 4. **Automated Notifications:** The system sends automated reminders to both patients and doctors about upcoming appointments via email or SMS.
 5. **Reports and Analytics:** The system generates reports on patient visits, doctor schedules, and other important metrics for hospital management.
 
+<h3 align="center">Work Flow <img align="center" src="https://static-00.iconduck.com/assets.00/workflow-icon-1877x2048-c8d8znjq.png" alt="venkatreddy" height="40" width="40" /></h3>
+
 ![AppointemntBooking](https://github.com/user-attachments/assets/c77a1c5b-ca99-4669-9dad-7374cc295a30)
 
 <h2 align="left">Tech Stack<img align="center" src="https://www.svgrepo.com/show/408381/stack-apps-layers.svg" alt="venkatreddy" height="40" width="50" /></h2>
