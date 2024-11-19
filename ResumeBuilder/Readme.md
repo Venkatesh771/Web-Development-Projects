@@ -10,7 +10,7 @@
 4. **Real-Time Preview:** As users enter their information, they can see real-time previews of how their resume will look, allowing them to make adjustments on the go.
 5. **Download and Export Options:** Once the resume is complete, users can download it in various formats such as PDF or DOCX.
 
-<h3 align="center">Work Flow <img align="center" src="https://static-00.iconduck.com/assets.00/workflow-icon-1877x2048-c8d8znjq.png" alt="venkatreddy" height="50" width="50" /></h3>
+<h3 align="center">Work Flow <img align="center" src="https://static-00.iconduck.com/assets.00/workflow-icon-1877x2048-c8d8znjq.png" alt="venkatreddy" height="40" width="40" /></h3>
 
 ![ResumeBuilder](https://github.com/user-attachments/assets/09378927-0bb4-4aa2-9c2c-851eac42f5a5)
 
