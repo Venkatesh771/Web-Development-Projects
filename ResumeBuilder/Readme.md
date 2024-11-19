@@ -10,6 +10,9 @@
 4. **Real-Time Preview:** As users enter their information, they can see real-time previews of how their resume will look, allowing them to make adjustments on the go.
 5. **Download and Export Options:** Once the resume is complete, users can download it in various formats such as PDF or DOCX.
 
+<h3 align="center">About Resume Builder</h3>
+![ResumeBuilder](https://github.com/user-attachments/assets/1b9d9036-3198-4a80-8b00-99f24e3f0b62)
+
 <h2 align="left">Tech Stack<img align="center" src="https://www.svgrepo.com/show/408381/stack-apps-layers.svg" alt="venkatreddy" height="40" width="50" /></h2>
 
 - **Front End**: HTML, CSS, JavaScript, Boostrap.
