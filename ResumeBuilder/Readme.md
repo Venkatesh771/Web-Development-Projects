@@ -1,4 +1,4 @@
-<h1 align="left">Resume Builder.io</h1>
+<h1 align="left">Resume Builder.io<img align="center" src="https://cdn-icons-png.flaticon.com/128/909/909263.png" alt="venkatreddy" height="50" width="70" /></h1>
 
 <h3 align="center">About Resume Builder</h3>
 
