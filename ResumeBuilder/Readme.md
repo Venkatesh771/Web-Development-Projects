@@ -1,6 +1,6 @@
 <h2 align="left">Resume Builder.io <img align="center" src="https://cdn-icons-png.flaticon.com/512/8101/8101319.png" alt="venkatreddy" height="40" width="40" /></h2>
 
-<h3 align="center">About Resume Builder <img align="center" src="https://www.pngitem.com/pimgs/m/495-4952510_resume-icon-1-circle-hd-png-download.png" alt="venkatreddy" height="40" width="40" /></h3>
+<h3 align="center">About Resume Builder <img align="center" src="https://cdn-icons-png.flaticon.com/512/574/574816.png" alt="venkatreddy" height="40" width="40" /></h3>
 
 <p>The Resume Builder.io project is designed to help users create professional resumes quickly and efficiently. It is an online tool that allows users to generate well-structured resumes by filling in their details in a user-friendly interface.</p>
 
