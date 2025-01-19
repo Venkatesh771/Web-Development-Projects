@@ -18,6 +18,10 @@
 
 ![31](https://github.com/user-attachments/assets/f7c0dfb9-9bf0-4afc-90ee-9353a58cd71b)
 
+<h2 align="left">Appointment Details of Patients <img align="center" src="https://cdn-icons-png.flaticon.com/128/2504/2504768.png" alt="venkatreddy" height="30" width="30" /></h2>
+
+![1](https://github.com/user-attachments/assets/3ebe918b-5bff-47f1-9b85-4aed69908c51)
+
 <h2 align="left">Tech Stack<img align="center" src="https://www.svgrepo.com/show/408381/stack-apps-layers.svg" alt="venkatreddy" height="40" width="50" /></h2>
 
 - **Front End**: HTML, CSS, JavaScript, Boostrap.
