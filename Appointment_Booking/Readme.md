@@ -14,6 +14,8 @@
 
 ![AppointemntBooking](https://github.com/user-attachments/assets/c77a1c5b-ca99-4669-9dad-7374cc295a30)
 
+<h2 align="left">Tech Stack<img align="center" src="https://cdn-icons-png.flaticon.com/128/5968/5968534.png" alt="venkatreddy" height="40" width="50" /></h2>
+
 <h2 align="left">Tech Stack<img align="center" src="https://www.svgrepo.com/show/408381/stack-apps-layers.svg" alt="venkatreddy" height="40" width="50" /></h2>
 
 - **Front End**: HTML, CSS, JavaScript, Boostrap.
