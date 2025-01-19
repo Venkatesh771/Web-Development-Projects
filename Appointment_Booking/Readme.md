@@ -14,13 +14,13 @@
 
 ![AppointemntBooking](https://github.com/user-attachments/assets/c77a1c5b-ca99-4669-9dad-7374cc295a30)
 
-<h2 align="left">Appointment E-Mail Notification <img align="center" src="https://cdn-icons-png.flaticon.com/128/5968/5968534.png" alt="venkatreddy" height="30" width="30" /></h2>
+<h3 align="left">Appointment E-Mail Notification <img align="center" src="https://cdn-icons-png.flaticon.com/128/5968/5968534.png" alt="venkatreddy" height="30" width="30" /></h3>
 
-![31](https://github.com/user-attachments/assets/f7c0dfb9-9bf0-4afc-90ee-9353a58cd71b)
+![3](https://github.com/user-attachments/assets/e1a2c9fe-7081-4803-b967-578084f49884)
 
-<h2 align="left">Appointment Details of Patients <img align="center" src="https://cdn-icons-png.flaticon.com/128/2504/2504768.png" alt="venkatreddy" height="30" width="30" /></h2>
+<h3 align="left">Appointment Details of Patients <img align="center" src="https://cdn-icons-png.flaticon.com/128/2504/2504768.png" alt="venkatreddy" height="30" width="30" /></h3>
 
-![1](https://github.com/user-attachments/assets/3ebe918b-5bff-47f1-9b85-4aed69908c51)
+![4](https://github.com/user-attachments/assets/0f1079f3-c879-4d0d-b23e-54aafa29f82e)
 
 <h2 align="left">Tech Stack<img align="center" src="https://www.svgrepo.com/show/408381/stack-apps-layers.svg" alt="venkatreddy" height="40" width="50" /></h2>
 
