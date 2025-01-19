@@ -15,11 +15,9 @@
 ![AppointemntBooking](https://github.com/user-attachments/assets/c77a1c5b-ca99-4669-9dad-7374cc295a30)
 
 <h3 align="center">Appointment E-Mail Notification <img align="center" src="https://cdn-icons-png.flaticon.com/128/5968/5968534.png" alt="venkatreddy" height="35" width="35" /></h3>
-
 ![3](https://github.com/user-attachments/assets/e1a2c9fe-7081-4803-b967-578084f49884)
 
 <h3 align="center">Appointment Details of Patients <img align="center" src="https://cdn-icons-png.flaticon.com/128/2504/2504768.png" alt="venkatreddy" height="35" width="35" /></h3>
-
 ![4](https://github.com/user-attachments/assets/0f1079f3-c879-4d0d-b23e-54aafa29f82e)
 
 <h2 align="left">Tech Stack<img align="center" src="https://www.svgrepo.com/show/408381/stack-apps-layers.svg" alt="venkatreddy" height="40" width="50" /></h2>
