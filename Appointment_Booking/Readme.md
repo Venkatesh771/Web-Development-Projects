@@ -20,7 +20,7 @@
 
 <h3 align="center">Appointment Details of Patients <img align="center" src="https://cdn-icons-png.flaticon.com/128/2504/2504768.png" alt="venkatreddy" height="35" width="35" /></h3>
 
-![4](https://github.com/user-attachments/assets/0f1079f3-c879-4d0d-b23e-54aafa29f82e)
+![4](https://github.com/user-attachments/assets/95326531-0c37-4a6c-9a85-ef955971df42)
 
 <h2 align="left">Tech Stack<img align="center" src="https://www.svgrepo.com/show/408381/stack-apps-layers.svg" alt="venkatreddy" height="40" width="50" /></h2>
 
